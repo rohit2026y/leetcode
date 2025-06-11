@@ -25,6 +25,7 @@ public:
         int rh=Height(root->right);
         maxi=max(maxi,lh+rh);
         diameterOfBinaryTree(root->left);
+        
         diameterOfBinaryTree(root->right);
         return maxi;
     }
