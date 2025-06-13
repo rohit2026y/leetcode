@@ -11,22 +11,10 @@
  */
 class Solution {
 public:
-    bool isSame = true;
-
-    void solve(TreeNode* p, TreeNode* q) {
-        if (p == nullptr && q == nullptr) return; // base case: both null => same at this node
-
-        if (p == nullptr || q == nullptr || p->val != q->val) {
-            isSame = false;  // trees differ
-            return;
-        }
-
-        solve(p->left, q->left);    // recursive check on left subtree
-        solve(p->right, q->right);  // recursive check on right subtree
-    }
-
     bool isSameTree(TreeNode* p, TreeNode* q) {
-        solve(p, q);
-        return isSame;
+        if(p==nullptr && q==nullptr) return true;
+        if(p==nullptr || q==nullptr) return false;
+        if(p->val!=q->val) return false;
+        return isSameTree(p->left,q->left) && isSameTree(p->right,q->right);
     }
 };
