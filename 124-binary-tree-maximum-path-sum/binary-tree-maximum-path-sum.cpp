@@ -11,21 +11,20 @@
  */
 class Solution {
 public:
-    int res=INT_MIN;
+    int maxi=INT_MIN;
     int solve(TreeNode* root){
-        if(root==nullptr) return 0;  //base case
-        int ls=solve(root->left);
-        int rs=solve(root->right);    //hypothesis
+        if(root==nullptr) return 0;
+        int lh=solve(root->left);
+        if(lh<0) lh=0;
+        int rh=solve(root->right);
+        if(rh<0) rh=0;
 
-        int temp=max(max(ls,rs)+root->val,root->val);  // passing to parent
-        int ans=max(temp,ls+rs+root->val);   // considering the current ndoe as top of an arch
-        res=max(res,ans);// storing maximum till now
-        return temp;   
+        maxi=max(maxi,lh+rh+root->val);
+        return max(lh,rh)+root->val;
 
     }
-
     int maxPathSum(TreeNode* root) {
         solve(root);
-        return res;
+        return maxi;
     }
 };
