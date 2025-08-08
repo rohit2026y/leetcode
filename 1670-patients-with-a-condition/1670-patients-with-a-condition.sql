@@ -1,7 +1,3 @@
 select * 
-from patients 
-where conditions like '% DIAB1%'
-union 
-select * 
-from patients 
-where conditions like 'DIAB1%';
+from patients
+where conditions regexp '(^DIAB1| DIAB1)';
