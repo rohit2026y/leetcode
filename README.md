@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Database
 |  |
 | ------- |
+| [0180-consecutive-numbers](https://github.com/rohit2026y/leetcode/tree/master/0180-consecutive-numbers) |
 | [0185-department-top-three-salaries](https://github.com/rohit2026y/leetcode/tree/master/0185-department-top-three-salaries) |
 | [0585-investments-in-2016](https://github.com/rohit2026y/leetcode/tree/master/0585-investments-in-2016) |
 | [0601-human-traffic-of-stadium](https://github.com/rohit2026y/leetcode/tree/master/0601-human-traffic-of-stadium) |
