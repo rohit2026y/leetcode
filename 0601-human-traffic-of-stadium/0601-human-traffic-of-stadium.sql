@@ -1,14 +1,16 @@
-SELECT id, visit_date, people
-FROM (
-    SELECT *,
-           LAG(people, 1) OVER (ORDER BY id) AS prev1,
-           LAG(people, 2) OVER (ORDER BY id) AS prev2,
-           LEAD(people, 1) OVER (ORDER BY id) AS next1,
-           LEAD(people, 2) OVER (ORDER BY id) AS next2
-    FROM Stadium
-) t
-WHERE 
-    (people >= 100 AND prev1 >= 100 AND prev2 >= 100)
-    OR (people >= 100 AND next1 >= 100 AND next2 >= 100)
-    OR (people >= 100 AND prev1 >= 100 AND next1 >= 100)
-ORDER BY visit_date;
+select id,visit_date,people
+from (select id,visit_date,people,id-rn as diff
+from (select *,
+rank() over(order by id) as rn
+from stadium
+where people>=100) as t) as tn
+
+where diff in (
+select id-rn as diff
+from (select *,
+rank() over(order by id) as rn
+from stadium
+where people>=100) as t
+group by diff
+having count(id)>=3)
+order by visit_date;
