@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0584-find-customer-referee](https://github.com/rohit2026y/leetcode/tree/master/0584-find-customer-referee) |
 | [0585-investments-in-2016](https://github.com/rohit2026y/leetcode/tree/master/0585-investments-in-2016) |
 | [0601-human-traffic-of-stadium](https://github.com/rohit2026y/leetcode/tree/master/0601-human-traffic-of-stadium) |
+| [0626-exchange-seats](https://github.com/rohit2026y/leetcode/tree/master/0626-exchange-seats) |
 | [1327-last-person-to-fit-in-the-bus](https://github.com/rohit2026y/leetcode/tree/master/1327-last-person-to-fit-in-the-bus) |
 | [1480-movie-rating](https://github.com/rohit2026y/leetcode/tree/master/1480-movie-rating) |
 | [1541-top-travellers](https://github.com/rohit2026y/leetcode/tree/master/1541-top-travellers) |
