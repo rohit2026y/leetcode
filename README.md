@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0601-human-traffic-of-stadium](https://github.com/rohit2026y/leetcode/tree/master/0601-human-traffic-of-stadium) |
 | [0626-exchange-seats](https://github.com/rohit2026y/leetcode/tree/master/0626-exchange-seats) |
 | [1327-last-person-to-fit-in-the-bus](https://github.com/rohit2026y/leetcode/tree/master/1327-last-person-to-fit-in-the-bus) |
+| [1452-restaurant-growth](https://github.com/rohit2026y/leetcode/tree/master/1452-restaurant-growth) |
 | [1480-movie-rating](https://github.com/rohit2026y/leetcode/tree/master/1480-movie-rating) |
 | [1541-top-travellers](https://github.com/rohit2026y/leetcode/tree/master/1541-top-travellers) |
 | [1625-group-sold-products-by-the-date](https://github.com/rohit2026y/leetcode/tree/master/1625-group-sold-products-by-the-date) |
